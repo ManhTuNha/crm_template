@@ -1,0 +1,69 @@
+﻿/*Styles for screen 515px and lower*/
+@media only screen and (max-width : 480px) 
+{
+	.divBanner { height:auto; clear:both; width:100%; position:relative;}
+	.divBannerSupport { clear:both; width:100%;position:relative; top:0px !important; left:0px; overflow:hidden; text-align:center; margin-bottom:10px;}
+	.mnTop ul li { width:44% !important; margin:1px; border-radius:3px; float:left;}
+	.mnTop ul li ul {display:none !important;}
+	.mainContent { clear:both; width:100% !important; margin:0 !important;}
+	.Right { clear:both; width:100% !important; }
+	.nAnswer .answerItem h3 { margin-bottom:0 !important;}
+	.newsItemL { width:100%; clear:both; height:auto;}
+	.newsItemL img { float:none; text-align:center; width:92% !important; height:auto;}
+	.newsItemL .desc { max-height:60px; overflow:hidden;}
+	.newsItemR { width:100%; clear:both; float:none; height:auto;}
+	.newsItemR img { width:92% !important; height:auto;}
+	.newsItemR .title { width:96% !important; clear:both;}
+	.newsItemR .desc { clear:both; width:96% !important;}
+	
+	.newsItem { clear:both; width:100%; margin-bottom:10px; margin-right:0 !important;float:none;}
+	.newsItem img { clear:both; width:100% !important;    max-height: none !important;}
+	.newsItem .title { width:100% !important; float:none; clear:both;}
+	.newsItem .desc { clear:both; width:100% !important; text-align:justify; float:none; height:auto;} 
+	
+	.nImage { clear:both; width:100%; text-align:center;}
+	.nIntro { clear:both; width:100%; }
+	.nContent table { width:100%;}
+	.nContent img { max-width:99%; height:auto;}
+	
+	#ProImg { clear:both; width:100% !important; } 
+	#ProImg img { width:100%;}
+	#ProInfo {  clear:both; width:100% !important; }
+	
+	#divRight {margin-left:5px !important; width:96% !important;}
+	#ProBoxGalleryOther { width:97% !important; height:auto; margin:1%; float:left;}
+	
+	.Footer { width:100%;}
+	.FooterBox { width:100%;}
+	.FooterCopyright { width:100%;}
+	.FooterMenu { clear:both; height:auto; width:100%;}
+	.FooterMenu ul li { width:44% !important;}
+	
+	nav {
+		border-bottom: 0;
+	}
+	nav ul {
+		display: none;
+		height: auto;
+	}
+	nav a#pull {
+		display: block;
+		background-color: #2d7fb9;
+		width: 100%;
+		position: relative;
+		padding:7px 15px;
+		color:White;
+		font-size:10pt;
+	}
+	nav a#pull:after {
+		content:"";
+		background: url('../../images/nav-icon.png') no-repeat;
+		width: 30px;
+		height: 30px;
+		display: inline-block;
+		position: absolute;
+		right: 35px;
+		top: 5px;
+	}
+	
+}

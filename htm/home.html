@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Mobile ERP</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href="css/css.css" rel="stylesheet" type="text/css" />
+
+    <script type="text/javascript" src="js/jquery.3.41.min.js"></script>
+
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+	
+</head>
+<body>
+	<div class="overlay" onclick="hideMenuMobile();"></div>
+    <div class="container">
+		<div class="row header">
+			<div class="col-md-2 col-sm-12 desktop">
+				<a href="home.html"><img src="images/logo.png" alt="Mobile ERP"/></a>
+			</div>
+			<div class="col-sm-12 mobile">
+				<a href="home.html"><img src="images/logo-mobile.png" alt="Mobile ERP"/></a>
+			</div>
+			<div class="menuMobile"><i class="fa fa-bars fa-2x" aria-hidden="true"></i></div>
+		</div>
+		
+        <div class="row home">
+			<div class="col-lg-12 col-md-12 col-sm-12"><h2>Main</h2></div>
+            <div class="col-lg-2 col-md-4 col-sm-6 col-xs-12 mtn-icon-group">
+				<div class="mtn-icon"><a href="#"><img src="images/icon-cart.png" alt="purchases"/></a></div>
+				<div class="mtn-text"><a href="#">Purchases</a></div>
+            </div>
+            <div class="col-lg-2 col-md-4 col-sm-6 col-xs-12 mtn-icon-group">
+				<div class="mtn-icon"><a href="#"><img src="images/icon-chart.png" alt="purchases"/></a></div>
+				<div class="mtn-text"><a href="#">Sales</a></div>
+            </div>
+			<div class="col-lg-2 col-md-4 col-sm-6 col-xs-12 mtn-icon-group">
+					<div class="mtn-icon"><a href="#"><img src="images/icon-report.png" alt="purchases"/></a></div>
+					<div class="mtn-text"><a href="#">Report</a></div>
+            </div>
+			<div class="col-lg-2 col-md-4 col-sm-6 col-xs-12 mtn-icon-group">
+					<div class="mtn-icon"><a href="#"><img src="images/icon-stock.png" alt="purchases"/></a></div>
+					<div class="mtn-text"><a href="#">Stock</a></div>
+            </div>
+			<div class="col-lg-2 col-md-4 col-sm-6 col-xs-12 mtn-icon-group">
+					<div class="mtn-icon"><img src="images/icon-cart.png" alt="purchases"/></a></div>
+					<div class="mtn-text"><a href="#">Report</a></div>
+            </div>
+			<div class="col-lg-2 col-md-4 col-sm-6 col-xs-12 mtn-icon-group">
+					<div class="mtn-icon"><img src="images/icon-report.png" alt="purchases"/></a></div>
+					<div class="mtn-text"><a href="#">Report</a></div>
+            </div>
+			
+			<div class="col-lg-2 col-md-4 col-sm-6 col-xs-12 mtn-icon-group">
+				<div class="mtn-icon"><a href="#"><img src="images/icon-report.png" alt="purchases"/></a></div>
+				<div class="mtn-text"><a href="#">Purchases</a></div>
+            </div>
+            <div class="col-lg-2 col-md-4 col-sm-6 col-xs-12 mtn-icon-group">
+				<div class="mtn-icon"><a href="#"><img src="images/icon-chart.png" alt="purchases"/></a></div>
+				<div class="mtn-text"><a href="#">Sales</a></div>
+            </div>
+			<div class="col-lg-2 col-md-4 col-sm-6 col-xs-12 mtn-icon-group">
+					<div class="mtn-icon"><a href="#"><img src="images/icon-cart.png" alt="purchases"/></a></div>
+					<div class="mtn-text"><a href="#">Report</a></div>
+            </div>
+			<div class="col-lg-2 col-md-4 col-sm-6 col-xs-12 mtn-icon-group">
+					<div class="mtn-icon"><a href="#"><img src="images/icon-stock.png" alt="purchases"/></a></div>
+					<div class="mtn-text"><a href="#">Stock</a></div>
+            </div>
+			<div class="col-lg-2 col-md-4 col-sm-6 col-xs-12 mtn-icon-group">
+					<div class="mtn-icon"><img src="images/icon-cart.png" alt="purchases"/></a></div>
+					<div class="mtn-text"><a href="#">Report</a></div>
+            </div>
+			<div class="col-lg-2 col-md-4 col-sm-6 col-xs-12 mtn-icon-group">
+					<div class="mtn-icon"><img src="images/icon-report.png" alt="purchases"/></a></div>
+					<div class="mtn-text"><a href="#">Report</a></div>
+            </div>
+        </div>
+		
+		<!--button-->
+		<div class="row home">
+			<div class="col-lg-12 col-md-12 col-sm-12"><h2>Button</h2></div>
+			
+			<div class="col-lg-6 col-md-6 col-sm-12">
+				<form action="login.html">
+					<button class="mtn-button">Login</button>
+				</form>
+			</div>
+			
+			<div class="col-lg-6 col-md-6 col-sm-12">
+				<button class="mtn-button">Purchases order 2</button>
+			</div>
+		</div>
+		<div class="row home">
+			<div class="col-lg-6 col-md-6 col-sm-12">
+				<button class="mtn-button">Purchases order</button>
+			</div>
+			<div class="col-lg-6 col-md-6 col-sm-12">
+				<button class="mtn-button">Purchases order 2</button>
+			</div>
+		</div>
+		
+		<!--Table-->
+		<div class="row home">
+			<div class="col-lg-12 col-md-12 col-sm-12"><h2>Table</h2></div>
+			<div class="table-responsive mtn-table">
+				<table class="table">
+					<thead>
+						<tr>
+							<th>Inv.No</th>
+							<th>Date</th>
+							<th>Customer</th>
+							<th>Amount</th>
+							<th>Price</th>
+							<th>Total</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>HQ145601</td>
+							<td>03/10/2020</td>
+							<td class="customer">C50 - OOTabs Co., Ltd</td>
+							<td class="amount">100</td>
+							<td class="money">500.000.000VND</td>
+							<td class="money">50.000.000.000VND</td>
+						</tr>
+						<tr>
+							<td>HQ01</td>
+							<td>03/10/2020</td>
+							<td class="customer">C50 - Nguyen Pham Tran The Ton Nu Thu 9 Co., Ltd</td>
+							<td class="amount">100</td>
+							<td class="money">5.000.000VND</td>
+							<td class="money">500.000.000VND</td>
+						</tr>
+						<tr>
+							<td>HQ145601</td>
+							<td>03/10/2020</td>
+							<td class="customer">C50 - Nguyen Pham Tran The Ton Nu Thu 9 Co., Ltd</td>
+							<td class="amount">10</td>
+							<td class="money">500.000.000VND</td>
+							<td class="money">5.000.000.000VND</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+		</div>
+		
+		<div class="row footer">
+			<div class="col-lg-12 col-md-12 col-sm-12">
+				<a href="#"><img src="images/asia-media-logo.png" alt="Mobile ERP"/></a>
+			</div>
+		</div>
+		<div class="row footer-menu">
+			<ul>
+				<li><i class="fa fa-bell fa-2x" aria-hidden="true"></i></li>
+				<li><i class="fa fa-gamepad fa-2x" aria-hidden="true"></i></li>
+				<li><i class="fa fa-arrows-alt fa-2x" aria-hidden="true"></i></li>
+				<li><i class="fa fa-comments-o fa-2x" aria-hidden="true"></i></li>
+				<li><i class="fa fa-home fa-2x" aria-hidden="true"></i></li>
+			</ul>
+		</div>
+		<div class="mobileMenu">
+			<ul>
+				<li class="mtn-icon-group active">
+					<div class="mtn-icon"><a href="#"><img src="images/icon-chart.png" alt="purchases"/></a></div>
+					<div class="mtn-text"><a href="#">Sales</a></div>
+				</li>
+				<li class="mtn-icon-group">
+					<div class="mtn-icon"><a href="#"><img src="images/icon-cart.png" alt="purchases"/></a></div>
+					<div class="mtn-text"><a href="#">Purchases</a></div>
+				</li>
+				<li class="mtn-icon-group">
+					<div class="mtn-icon"><a href="#"><img src="images/icon-report.png" alt="purchases"/></a></div>
+					<div class="mtn-text"><a href="#">Report</a></div>
+				</li>
+				<li class="mtn-icon-group">
+					<div class="mtn-icon"><a href="#"><img src="images/icon-stock.png" alt="purchases"/></a></div>
+					<div class="mtn-text"><a href="#">Stock</a></div>
+				</li>
+				<li class="mtn-icon-group">
+					<div class="mtn-icon"><a href="#"><img src="images/icon-cart.png" alt="purchases"/></a></div>
+					<div class="mtn-text"><a href="#">Purchases</a></div>
+				</li>
+			</ul>
+		</div>
+		<script type="text/javascript" src="js/main.js"></script>
+    </div>
+</body>
+</html>
