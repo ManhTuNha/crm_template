@@ -11,6 +11,8 @@ ul { margin:0; padding:0;}
 ul li { list-style:none;}
 th, td, tr {padding:5px;}
 img { border:0;}
+input, textarea { background-color:#1F5055 !important; border:1px solid #1F5055 !important; color:#fff !important;}
+.input-group-text {background-color: #97BDC0 !important; border: 1px solid #97BDC0 !important;}
 .logo { clear:both; text-align:center;padding:60px 0 60px 0;}
 .logo img{ margin:auto; display:block; max-height:100px; }
 .header { clear:both; overflow:hidden; padding:10px 0; position:relative;}
