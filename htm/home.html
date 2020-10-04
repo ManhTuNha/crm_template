@@ -198,29 +198,24 @@
 		</form>
 		
 		<!--datetime-->
-		<link rel="stylesheet" href="css/mobiscroll.jquery.min.css">
-		<script src="js/mobiscroll.jquery.min.js"></script>
+		<script src="js/mobiscroll.js" type="text/javascript"></script>
+		<link href="css/mobiscroll.css" rel="stylesheet" type="text/css" />
 		<div class="row home">
 				<div class="col-lg-12 col-md-12 col-sm-12"><h2>Datetime</h2></div>
 			<div class="col-lg-4 col-md-4 col-sm-12">
 				<div class="form-group">
-					<input class="form-control" id="demo-mobile" data-input-style="box" value="10/04/2020" placeholder="Please Select..." />
+					<input class="form-control mobiscroll" id="mobiledt" data-input-style="box" value="10/04/2020" placeholder="Please Select..." />
 				</div>
 			</div>
 			<script>
-
-    mobiscroll.settings = {
-        lang: 'en',
-        theme: 'ios',
-            themeVariant: 'light'
-    };
-    
-    $(function () {
-        $('#demo-mobile').mobiscroll().date({
-            display: 'bubble'
-        });
-    });
-</script>
+				$(document).ready(function () {
+					init_datepicker('#mobiledt');
+				});
+				
+				function init_datepicker(id) {
+					$(id).scroller({ dateFormat: "dd/mm/yy", dateOrder: "ddmmyy" });
+				}
+			</script>
 		</div>		
 		
 		<div class="row footer">
