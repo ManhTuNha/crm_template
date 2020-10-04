@@ -64,15 +64,15 @@
 					<div class="mtn-text"><a href="#">Report</a></div>
             </div>
 			<div class="col-lg-2 col-md-4 col-sm-6 col-xs-12 mtn-icon-group">
-					<div class="mtn-icon"><a href="#"><img src="images/icon-stock.png" alt="purchases"/></a></div>
-					<div class="mtn-text"><a href="#">Stock</a></div>
+					<div class="mtn-icon"><a href="#"><i class="fa fa-id-card fa-3x" aria-hidden="true"></i></a></div>
+					<div class="mtn-text"><a href="#">ID</a></div>
             </div>
 			<div class="col-lg-2 col-md-4 col-sm-6 col-xs-12 mtn-icon-group">
-					<div class="mtn-icon"><img src="images/icon-cart.png" alt="purchases"/></a></div>
-					<div class="mtn-text"><a href="#">Report</a></div>
+					<div class="mtn-icon"><a href="#"><i class="fa fa-cc-mastercard fa-3x" aria-hidden="true"></i></a></div>
+					<div class="mtn-text"><a href="#">Payment</a></div>
             </div>
 			<div class="col-lg-2 col-md-4 col-sm-6 col-xs-12 mtn-icon-group">
-					<div class="mtn-icon"><img src="images/icon-report.png" alt="purchases"/></a></div>
+					<div class="mtn-icon"><a href="#"><i class="fa fa-area-chart fa-3x" aria-hidden="true"></i></a></div>
 					<div class="mtn-text"><a href="#">Report</a></div>
             </div>
         </div>
@@ -83,20 +83,25 @@
 			
 			<div class="col-lg-6 col-md-6 col-sm-12">
 				<form action="login.html">
-					<button class="mtn-button">Login</button>
+					<div class="form-group">
+						<button class="mtn-button mtn-button-large">Login</button>
+					</div>
 				</form>
 			</div>
-			
 			<div class="col-lg-6 col-md-6 col-sm-12">
-				<button class="mtn-button">Purchases order 2</button>
-			</div>
-		</div>
-		<div class="row home">
-			<div class="col-lg-6 col-md-6 col-sm-12">
-				<button class="mtn-button">Purchases order</button>
+				<div class="form-group">
+					<button class="mtn-button mtn-button-large">Purchases order 2</button>
+				</div>
 			</div>
 			<div class="col-lg-6 col-md-6 col-sm-12">
-				<button class="mtn-button">Purchases order 2</button>
+				<div class="form-group">
+					<button class="mtn-button mtn-button-large">Purchases order</button>
+				</div>
+			</div>
+			<div class="col-lg-6 col-md-6 col-sm-12">
+				<div class="form-group">
+					<button class="mtn-button mtn-button-large">Purchases order 2</button>
+				</div>
 			</div>
 		</div>
 		
@@ -146,24 +151,39 @@
 		</div>
 		
 		<!--input-->
-		<div class="row home">
-			<div class="col-lg-12 col-md-12 col-sm-12"><h2>Input</h2></div>
-			<div class="col-lg-4 col-md-4 col-sm-12">
-				<input type="text" class="form-control" placeholder="fullname">
+		<form  class="was-validated">
+			<div class="row home">
+				<div class="col-lg-12 col-md-12 col-sm-12"><h2>Input</h2></div>
+				<div class="col-lg-4 col-md-4 col-sm-12">
+					<div class="form-group">
+						<input type="text" class="form-control" placeholder="fullname" value="Nha" required>
+						<div class="invalid-feedback">Please fill out this field.</div>
+					</div>
+				</div>
+				<div class="col-lg-4 col-md-4 col-sm-12">
+					<div class="form-group">
+						<input type="text" class="form-control" placeholder="address" required>
+						<div class="invalid-feedback">Please fill out this field.</div>
+					</div>
+				</div>
+				<div class="col-lg-4 col-md-4 col-sm-12">
+					<div class="form-group">
+						<input type="text" class="form-control" placeholder="phone" value="090.909.0909" required>
+						<div class="invalid-feedback">Please fill out this field.</div>
+					</div>
+				</div>
+				<div class="col-lg-12 col-md-12 col-sm-12">
+					<div class="form-group">
+						<textarea class="form-control" rows="5" id="comment"></textarea>
+					</div>
+				</div>
+				<div class="col-lg-12 col-md-12 col-sm-12">
+					<div class="form-group">
+						<button type="submit" class="btn mtn-button mtn-button-small">Submit</button>
+					</div>
+				</div>
 			</div>
-			<div class="col-lg-4 col-md-4 col-sm-12">
-				<input type="text" class="form-control" placeholder="address">
-			</div>
-			<div class="col-lg-4 col-md-4 col-sm-12">
-				<input type="text" class="form-control" placeholder="phone">
-			</div>
-		</div>
-		<div class="row home">
-			<div class="col-lg-12 col-md-12 col-sm-12">
-				<textarea class="form-control" rows="5" id="comment"></textarea>
-			</div>
-		</div>	
-		
+		</form>
 		<div class="row footer">
 			<div class="col-lg-12 col-md-12 col-sm-12">
 				<a href="#"><img src="images/asia-media-logo.png" alt="Mobile ERP"/></a>
@@ -173,9 +193,9 @@
 			<ul>
 				<li><i class="fa fa-bell fa-2x" aria-hidden="true"></i></li>
 				<li><i class="fa fa-gamepad fa-2x" aria-hidden="true"></i></li>
-				<li><i class="fa fa-arrows-alt fa-2x" aria-hidden="true"></i></li>
-				<li><i class="fa fa-comments-o fa-2x" aria-hidden="true"></i></li>
-				<li><i class="fa fa-home fa-2x" aria-hidden="true"></i></li>
+				<li><a href="login.html"><i class="fa fa-arrows-alt fa-2x" aria-hidden="true"></i></a></li>
+				<li><a href="login.html"><i class="fa fa-comments-o fa-2x" aria-hidden="true"></i></a></li>
+				<li><a href="home.html"><i class="fa fa-home fa-2x" aria-hidden="true"></i></a></li>
 			</ul>
 		</div>
 		<div class="mobileMenu">
