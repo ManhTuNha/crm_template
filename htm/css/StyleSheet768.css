@@ -1,7 +1,7 @@
 ﻿/*Styles for screen 650px and lower*/
 @media screen and (max-width: 768px)
 {
-	.home { padding:45px 0 10px 0;}
+	.home { padding:50px 0 10px 0;}
 	.mobile { display:block;}
 	.desktop { display: none;}
 	.header { background-color:#fff; z-index:100; height:50px; position:fixed; width:100%; top:0; left:0; margin:0; }

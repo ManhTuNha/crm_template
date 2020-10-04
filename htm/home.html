@@ -151,9 +151,21 @@
 		</div>
 		
 		<!--input-->
+		<div class="row home">
+				<div class="col-lg-12 col-md-12 col-sm-12"><h2>Search</h2></div>
+				<div class="col-lg-12 col-md-12 col-sm-12">
+					<div class="input-group mb-3">
+						<input type="text" class="form-control" placeholder="Search">
+							<div class="input-group-append">
+								<button class="btn btn-success" type="submit">Go</button>
+							</div>
+					</div>
+				</div>
+		</div>
 		<form  class="was-validated">
 			<div class="row home">
 				<div class="col-lg-12 col-md-12 col-sm-12"><h2>Input</h2></div>
+				
 				<div class="col-lg-4 col-md-4 col-sm-12">
 					<div class="form-group">
 						<input type="text" class="form-control" placeholder="fullname" value="Nha" required>
@@ -184,6 +196,33 @@
 				</div>
 			</div>
 		</form>
+		
+		<!--datetime-->
+		<link rel="stylesheet" href="css/mobiscroll.jquery.min.css">
+		<script src="js/mobiscroll.jquery.min.js"></script>
+		<div class="row home">
+				<div class="col-lg-12 col-md-12 col-sm-12"><h2>Datetime</h2></div>
+			<div class="col-lg-4 col-md-4 col-sm-12">
+				<div class="form-group">
+					<input class="form-control" id="demo-mobile" data-input-style="box" value="10/04/2020" placeholder="Please Select..." />
+				</div>
+			</div>
+			<script>
+
+    mobiscroll.settings = {
+        lang: 'en',
+        theme: 'ios',
+            themeVariant: 'light'
+    };
+    
+    $(function () {
+        $('#demo-mobile').mobiscroll().date({
+            display: 'bubble'
+        });
+    });
+</script>
+		</div>		
+		
 		<div class="row footer">
 			<div class="col-lg-12 col-md-12 col-sm-12">
 				<a href="#"><img src="images/asia-media-logo.png" alt="Mobile ERP"/></a>
